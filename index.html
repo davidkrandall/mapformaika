@@ -2,10 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; url='https://airtable.com/appTRaRuw0bCsbMgC/shrFpQQbdv42ajnkq/tblQwRVnBDYppAThW'">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map for Maika</title>
+
+    <!-- Google Fonts link for Poppins -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+
+    <style>
+        /* General page styles */
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f4e8; /* Matching the background color of the logo */
+            font-family: 'Poppins', sans-serif; /* More eye-catching font */
+        }
+
+        /* Main container */
+        .container {
+            text-align: center;
+            max-width: 90%;
+            width: 100%;
+        }
+
+        /* Logo styling */
+        .logo {
+            width: 100%;
+            max-width: 400px; /* Max width for the logo */
+            height: auto;
+            margin-bottom: 40px;
+        }
+
+        /* Button styling */
+        .button {
+            display: block; /* Stacked vertically */
+            width: 100%;
+            max-width: 400px; /* Cap width to 400px */
+            margin: 10px auto;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            color: #fff;
+            background-color: #6f9e67; /* Match the green from the tree logo */
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #8bbf83; /* Slightly lighter green on hover */
+        }
+
+        /* Special button styling */
+        .add-connection {
+            background-color: #e37f7d; /* Distinct color for the 'Add Maika Connection' button */
+        }
+
+        .add-connection:hover {
+            background-color: #f49897; /* Lighter shade on hover */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .button {
+                width: 90%;
+                padding: 12px 0;
+                font-size: 1em;
+            }
+        }
+    </style>
 </head>
 <body>
-    <p>If you are not redirected automatically, follow this <a href="https://airtable.com/appTRaRuw0bCsbMgC/shrFpQQbdv42ajnkq/tblQwRVnBDYppAThW">link to the Airtable view</a>.</p>
+    <div class="container">
+        <img src="maikamaplogo.png" alt="Map for Maika Logo" class="logo">
+        <div>
+            <a href="https://airtable.com/appTRaRuw0bCsbMgC/shrFpQQbdv42ajnkq" class="button">David's Connections</a>
+            <a href="https://airtable.com/app4OcjyVAp76dWtL/shrhH0eF1icjCQ8Lm" class="button">Maika's Connections</a>
+            <a href="https://airtable.com/app4OcjyVAp76dWtL/pagmBSFE4AuCtJHnP/form" class="button add-connection">Add Maika Connection</a>
+        </div>
+    </div>
 </body>
 </html>
